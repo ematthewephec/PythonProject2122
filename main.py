@@ -7,7 +7,6 @@ myip=get_ip(GoogleDnsProvider)
 print(myip)
 
 
-"""
     while True:
         print("entrer votre commande")
         commande=input()
@@ -17,6 +16,6 @@ print(myip)
                 print(myip)
             else
                 print("une erreur à été detecté")
-"""
+
 
 
