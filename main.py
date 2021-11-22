@@ -10,11 +10,11 @@ print(myip)
     while True:
         print("entrer votre commande")
         commande=input()
-            if commande = "stop"
+            if commande = "stop":
                 break
-            elif commande="ip"
+            elif commande= "ip" :
                 print(myip)
-            else
+            else :
                 print("une erreur à été detecté")
 
 
