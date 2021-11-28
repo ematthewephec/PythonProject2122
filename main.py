@@ -19,18 +19,19 @@ class HelpFunction:
 
 helpGetIp = HelpFunction("cette fonction ne prend pas d'argument et renvoie votre adresse ip public")
 functionsList = ["/getIp", "/help"]
-functionsString = "voici la liste des fonctions : "+", ".join(functionsList)
-helpGeneral = HelpFunction(functionsString+".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
+functionsString = "voici la liste des fonctions : " + ", ".join(functionsList)
+helpGeneral = HelpFunction(functionsString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
-while True:
+
+def inputcommande():
     print("Entrer votre commande:")
     commande = input()
-    if commande == "/stop":
-        print("Arret du programme")
-        break
-    elif commande != "" and commande.split()[0] == "/getIp":
+    if commande != "" and commande.split()[0] == "/getIp":
         getip(commande)
     elif commande != "" and commande.split()[0] == "/help":
         print(helpGeneral.help)
     else:
         print("une erreur à été detecté")
+
+
+inputcommande()
