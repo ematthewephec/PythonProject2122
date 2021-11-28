@@ -18,8 +18,9 @@ class HelpFunction:
 
 
 helpGetIp = HelpFunction("cette fonction ne prend pas d'argument et renvoie votre adresse ip public")
-functionList = "voici le liste des fonctions :"+" /getIp"
-helpGeneral = HelpFunction(functionList+". ajoutez \" help\" à la suite de celles-ci pour plus d'informations")
+functionsList = ["/getIp", "/help"]
+functionsString = "voici la liste des fonctions : "+", ".join(functionsList)
+helpGeneral = HelpFunction(functionsString+".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
 while True:
     print("Entrer votre commande:")
