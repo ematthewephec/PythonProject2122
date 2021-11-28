@@ -12,15 +12,15 @@ def getip(cmd):
         print("une erreur à été detecté")
 
 
-class HelpCommande:
+class HelpCommand:
     def __init__(self, description):
         self.help = description
 
 
-helpGetIp = HelpCommande("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
-commandList = ["/getIp", "/help"]
+helpGetIp = HelpCommand("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
+commandList = ["/getIp", "/help"]  # liste des commandes ( à completer lors de l'ajout d'une commande)
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
-helpGeneral = HelpCommande(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
+helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
 
 def inputcommand():
