@@ -12,26 +12,26 @@ def getip(cmd):
         print("une erreur à été detecté")
 
 
-class HelpFunction:
+class HelpCommande:
     def __init__(self, description):
         self.help = description
 
 
-helpGetIp = HelpFunction("cette fonction ne prend pas d'argument et renvoie votre adresse ip public")
-functionsList = ["/getIp", "/help"]
-functionsString = "voici la liste des fonctions : " + ", ".join(functionsList)
-helpGeneral = HelpFunction(functionsString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
+helpGetIp = HelpCommande("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
+commandList = ["/getIp", "/help"]
+commandString = "voici la liste des commandes : " + ", ".join(commandList)
+helpGeneral = HelpCommande(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
 
-def inputcommande():
+def inputcommand():
     print("Entrer votre commande:")
-    commande = input()
-    if commande != "" and commande.split()[0] == "/getIp":
-        getip(commande)
-    elif commande != "" and commande.split()[0] == "/help":
+    command = input()
+    if command != "" and command.split()[0] == "/getIp":
+        getip(command)
+    elif command != "" and command.split()[0] == "/help":
         print(helpGeneral.help)
     else:
         print("une erreur à été detecté")
 
 
-inputcommande()
+inputcommand()
