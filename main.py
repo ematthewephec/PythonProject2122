@@ -11,14 +11,15 @@ def getip(cmd):
     else:
         print("une erreur à été detecté")
 
+versionAPP="Beta0.1"
 
 class HelpCommand:
     def __init__(self, description):
         self.help = description
 
-
+helpVersion= HelpCommand("montre la version utulisé du chat bot")
 helpGetIp = HelpCommand("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
-commandList = ["/getIp", "/help"]  # liste des commandes ( à completer lors de l'ajout d'une commande)
+commandList = ["/getIp", "/help","/version"]  # liste des commandes ( à completer lors de l'ajout d'une commande)
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
 helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
@@ -30,6 +31,8 @@ def inputcommand():
         getip(command)
     elif command != "" and command.split()[0] == "/help":
         print(helpGeneral.help)
+    elif command != "" and command.split()[0] == "/version":
+        print(versionAPP)
     else:
         print("une erreur à été detecté")
 
