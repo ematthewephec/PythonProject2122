@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b00feedf-9b1a-4c21-bc7c-bca7e8c0f3a8" name="Changes" comment="renommage des variables en anglais">
-      <change afterPath="$PROJECT_DIR$/appellechat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showOnlineUserTag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appelle chat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="b00feedf-9b1a-4c21-bc7c-bca7e8c0f3a8" name="Changes" comment="ajout de la commande showOnlineUserTag et de son help (graph construit sur base d'un exemple et non lié à la dB)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638131163388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajout de la commande showOnlineUserTag et de son help (graph construit sur base d'un exemple et non lié à la dB)">
+      <created>1639195940019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639195940019</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +143,7 @@
     <MESSAGE value="légère modification de la liste des fonctions" />
     <MESSAGE value="suppression du while true" />
     <MESSAGE value="renommage des variables en anglais" />
-    <option name="LAST_COMMIT_MESSAGE" value="renommage des variables en anglais" />
+    <MESSAGE value="ajout de la commande showOnlineUserTag et de son help (graph construit sur base d'un exemple et non lié à la dB)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de la commande showOnlineUserTag et de son help (graph construit sur base d'un exemple et non lié à la dB)" />
   </component>
 </project>
