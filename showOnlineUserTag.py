@@ -1,4 +1,5 @@
 from main import *
+from appellechat import *
 import matplotlib.pyplot as plt
 import numpy
 
@@ -22,8 +23,8 @@ def showOnlineUserTag(cmd,ulist):
         plt.suptitle('repartition des utilisateurs par tag')
         plt.show()
     elif len(cmd.split()) > 1 and cmd.split()[1] == "help":  #en cas de /showOnlineUserTag help
-        print(helpShowOnlineUserTag.help)
+        print( helpShowOnlineUserTag.help)
     else:
-        print("une erreur à été detectée")
+        print( "une erreur à été detectée")
 
 
