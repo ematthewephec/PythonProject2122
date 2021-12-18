@@ -13,11 +13,11 @@ from showOnlineUserTag import *
 def getip(cmd):
     if len(cmd.split()) == 1:
         myip = get_ip(GoogleDnsProvider)
-        return "votre adresse ip est: " + myip
+        print("votre adresse ip est: " + myip)
     elif len(cmd.split()) > 1 and cmd.split()[1] == "help":
-        return helpGetIp.help
+        print(helpGetIp.help)
     else:
-        return "une erreur à été detectée"
+        print("une erreur à été detectée")
 
 
 class HelpCommand:
@@ -29,6 +29,8 @@ commandList = ["/getIp", "/help","/showOnlineUserTag"]  # liste des commandes ( 
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
 helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 
+if __name__ == "__main__":
+    inputcommand()
 
 
 
