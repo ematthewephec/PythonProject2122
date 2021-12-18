@@ -1,10 +1,20 @@
-from kivy.clock import Clock
-from kivy.core.window import Window
-from kivy.lang import Builder
-from kivy.properties import StringProperty
-from kivymd.app import MDApp
-from kivymd.uix.list import OneLineIconListItem, IconLeftWidget
+from kivy.app import App
+from kivy.uix.textinput import TextInput
+from kivy.uix.widget import Widget
 
 
-def build(self):
-    return Builder.load_file("UI.kv")
+
+class MyTextInput(Widget):
+    pass
+
+
+class TextWindow(App):
+    def build(self):
+        text_input = TextInput(font_size = 30, multiline = False)
+
+        return text_input
+
+
+if __name__ == "__main__":
+    window = TextWindow()
+    window.run()
