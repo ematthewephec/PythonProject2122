@@ -28,3 +28,11 @@
         Image:
             source: 'ephecLogo.png'
             pos_hint: {'center_x': 0.125, 'center_y': 0.9}
+
+        Button:
+            id:test3
+            text: 'Ok'
+            focus: False
+            pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+            size_hint: 0.1, 0.1
+            on_press : root.abc()
