@@ -29,7 +29,7 @@ class UIApp(App):
     def outputtext(self):
         text = self.root.ids.output.text
 
-        self.ids['result_label'].text = str("fuck you")
+        self.ids['result_label'].text = str("test")
 
 
 
