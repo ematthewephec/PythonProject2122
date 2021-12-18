@@ -1,20 +1,26 @@
 from kivy.app import App
-from kivy.uix.textinput import TextInput
 from kivy.uix.widget import Widget
+from kivy.lang import Builder
 
 
+Builder.load_file('UI.kv')
 
-class MyTextInput(Widget):
+
+class UI(Widget):
     pass
 
 
-class TextWindow(App):
+class UIApp(App):
     def build(self):
-        text_input = TextInput(font_size = 30, multiline = False)
+        return UI()
 
-        return text_input
+    def process(self):
+        text = self.root.ids.input.text
+        print(text)
 
+    def outputtext(self):
+        text = self.root.ids.input.text
+        print(text)
 
 if __name__ == "__main__":
-    window = TextWindow()
-    window.run()
+    UIApp().run()
