@@ -22,8 +22,8 @@ def showOnlineUserTag(cmd,ulist):
         plt.suptitle('repartition des utilisateurs par tag')
         plt.show()
     elif len(cmd.split()) > 1 and cmd.split()[1] == "help":  #en cas de /showOnlineUserTag help
-        print(helpShowOnlineUserTag.help)
+        return helpShowOnlineUserTag.help
     else:
-        print("une erreur à été detectée")
+        return "une erreur à été detectée"
 
 
