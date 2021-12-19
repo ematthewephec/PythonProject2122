@@ -1,6 +1,6 @@
 from whatsmyip.ip import get_ip
 from whatsmyip.providers import GoogleDnsProvider
-
+#test
 
 class HelpCommand:  #placé avant les import des fichiers pour eviter des bugs
     def __init__(self, description):
