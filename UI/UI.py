@@ -9,7 +9,6 @@ from kivy.lang import Builder
 from kivy.properties import ObjectProperty
 from appellechat import *
 
-
 Builder.load_file('UI.kv')
 
 
@@ -27,19 +26,16 @@ class UIApp(App):
         text = self.root.ids.input.text
         print(text)
 
-
     def outputtext(self):
         text = self.root.ids.output.text
 
         self.ids['result_label'].text = str("test")
 
-
-
-
     def abc(self):
         print('Test')
         command = self.root.ids.input.text
-        inputcommand(command) #hier !!!!!!!!!!!!!!!
+        inputcommand(command)  # hier !!!!!!!!!!!!!!!
+
 
 if __name__ == "__main__":
     UIApp().run()

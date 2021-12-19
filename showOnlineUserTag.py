@@ -20,7 +20,6 @@ def showOnlineUserTag(cmd, ulist):
                 else:
                     listetag.append(ii)
                     numberoftag.append(1)
-        graph = plt.figure()
         plt.bar(listetag, numberoftag, color='r')
         plt.xlabel('tags')
         plt.ylabel('nombre d\'utilisateurs')

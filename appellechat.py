@@ -7,8 +7,8 @@ def inputcommand(command):
     elif command != "" and command.split()[0] == "/help":
         print(helpGeneral.help)
     elif command != "" and command.split()[0] == "/showOnlineUserTag":
-        showOnlineUserTag(command,userlist)
-    #elif command != "" and command.split()[0] == "/version":
+        showOnlineUserTag(command, userlist)
+    # elif command != "" and command.split()[0] == "/version":
     #    print(versionAPP)
     else:
-        print("commande non existante , faites /help pour voir la liste des commandes" )
+        print("commande non existante , faites /help pour voir la liste des commandes")
