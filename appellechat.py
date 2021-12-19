@@ -1,5 +1,6 @@
 from main import *
 
+
 def inputcommand(command):
     if command != "" and command.split()[0] == "/getIp":
         getip(command)

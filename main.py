@@ -1,12 +1,10 @@
 from whatsmyip.ip import get_ip
 from whatsmyip.providers import GoogleDnsProvider
-#test
 
-class HelpCommand:  #placé avant les import des fichiers pour eviter des bugs
+
+class HelpCommand:  # placé avant les import des fichiers pour eviter des bugs
     def __init__(self, description):
         self.help = description
-
-
 
 
 def getip(cmd):
@@ -19,20 +17,11 @@ def getip(cmd):
         print("une erreur à été detectée")
 
 
-class HelpCommand:
-    def __init__(self, description):
-        self.help = description
-
 from appellechat import *
 from showOnlineUserTag import *
 
 helpGetIp = HelpCommand("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
-commandList = ["/getIp", "/help","/showOnlineUserTag"]  # liste des commandes ( à completer lors de l'ajout d'une commande)
+# liste des commandes ( à completer lors de l'ajout d'une commande)
+commandList = ["/getIp", "/help", "/showOnlineUserTag"]
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
 helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
-
-if __name__ == "__main__":
-    inputcommand()
-
-
-
