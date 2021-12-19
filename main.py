@@ -6,8 +6,7 @@ class HelpCommand:  #placé avant les import des fichiers pour eviter des bugs
     def __init__(self, description):
         self.help = description
 
-from appellechat import *
-from showOnlineUserTag import *
+
 
 
 def getip(cmd):
@@ -23,6 +22,9 @@ def getip(cmd):
 class HelpCommand:
     def __init__(self, description):
         self.help = description
+
+from appellechat import *
+from showOnlineUserTag import *
 
 helpGetIp = HelpCommand("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
 commandList = ["/getIp", "/help","/showOnlineUserTag"]  # liste des commandes ( à completer lors de l'ajout d'une commande)

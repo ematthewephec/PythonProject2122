@@ -7,6 +7,7 @@ from kivymd.uix.button import MDIconButton
 from kivymd.uix.label import MDLabel
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty
+from appellechat import *
 
 
 Builder.load_file('UI.kv')
@@ -18,6 +19,7 @@ class UI(Widget):
 
 class UIApp(App):
     test3 = ObjectProperty(None)
+
     def build(self):
         return UI()
 
@@ -33,12 +35,11 @@ class UIApp(App):
 
 
 
-    def _on_keyboard_down(self, instance, keyboard, keycode, text, modifiers):
-        if self.test3.focus and keycode == 40:  # 40 - Enter key pressed
-            self.abc()
 
     def abc(self):
         print('Test')
+        command = self.root.ids.input.text
+        inputcommand(command) #hier !!!!!!!!!!!!!!!
 
 if __name__ == "__main__":
     UIApp().run()
