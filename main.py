@@ -10,11 +10,11 @@ class HelpCommand:  # à placer avant les import des fichiers pour eviter des bu
 def getip(cmd):
     if len(cmd.split()) == 1:
         myip = get_ip(GoogleDnsProvider)
-        print("votre adresse ip est: " + myip)
+        return "votre adresse ip est: " + myip
     elif len(cmd.split()) > 1 and cmd.split()[1] == "help":
-        print(helpGetIp.help)
+        return helpGetIp.help
     else:
-        print("une erreur à été detectée")
+        return "une erreur à été detectée"
 
 
 from appellechat import *

@@ -25,7 +25,8 @@ def showOnlineUserTag(cmd, ulist):
         plt.ylabel('nombre d\'utilisateurs')
         plt.suptitle('repartition des utilisateurs par tag')
         plt.show()
+        return "your graph is open in another window"
     elif len(cmd.split()) > 1 and cmd.split()[1] == "help":  # en cas de /showOnlineUserTag help
-        print(helpShowOnlineUserTag.help)
+        return helpShowOnlineUserTag.help
     else:
-        print("une erreur à été detectée")
+        return "une erreur à été detectée"
