@@ -3,13 +3,13 @@
 <UI>:
     title: 'InputDialog'
     auto_dismiss: False
-    id: test1
+    id: main
 
     RelativeLayout:
         orientation: 'vertical'
         pos: self.pos
         size: root.size
-        id: test2
+        id: sub
 
         TextInput:
             id: input
@@ -18,21 +18,22 @@
             size_hint: 0.95, 0.2
             on_text: app.process()
 
-        TextInput:
-            id: output
-            hint_text:'...'
+        MDLabel:
+            id: result_label
+            text:'...'
+            text_color: 0, 0, 1, 1
             pos_hint: {'center_x': 0.5, 'center_y': 0.6}
             size_hint: 0.95, 0.2
-            on_text: app.outputtext()
+
 
         Image:
             source: 'ephecLogo.png'
             pos_hint: {'center_x': 0.125, 'center_y': 0.9}
 
         Button:
-            id:test3
+            id: confirmbutton
             text: 'Ok'
             focus: False
             pos_hint: {'center_x': 0.5, 'center_y': 0.1}
             size_hint: 0.1, 0.1
-            on_press : app.abc()
+            on_press : app.outputtext()
