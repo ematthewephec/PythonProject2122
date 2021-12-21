@@ -18,9 +18,10 @@ def delete_data(delete_item):
 def insert_data(item):
     collection.insert_one(item)
 
-def fin_data(search):
+def find_data(search):
     doc = collection.find(search)
-    return doc
+    print("Recherche en cours....")
+    return doc[0]
 
 if __name__ == "__main__":
     try:

@@ -22,6 +22,7 @@ from showOnlineUserTag import *
 
 helpGetIp = HelpCommand("cette commande ne prend pas d'argument et renvoie votre adresse ip public")
 # liste des commandes ( à completer lors de l'ajout d'une commande)
-commandList = ["/getIp", "/help", "/showOnlineUserTag"]
+commandList = ["/getIp", "/help", "/showOnlineUserTag","/showUser"]
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
 helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
+helpShowUser = HelpCommand("Cette fonction prend 2 parametres le nom et prenom séparé par un espace")

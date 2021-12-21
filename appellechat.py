@@ -1,4 +1,5 @@
 from main import *
+import showUser
 
 
 def inputcommand(command):
@@ -10,5 +11,7 @@ def inputcommand(command):
         return showOnlineUserTag(command, userlist)
     # elif command != "" and command.split()[0] == "/version":
     #    print(versionAPP)
+    elif command != "" and command.split()[0] == "/showUser":
+        return showUser.show_user(command.split()[1])
     else:
         return "commande non existante , faites /help pour voir la liste des commandes"
