@@ -23,10 +23,3 @@ def find_data(search):
     print("Recherche en cours....")
     return doc[0]
 
-if __name__ == "__main__":
-    try:
-        toto = {"_id":4, "lastname":"Moulart", "firstname":"Sam", "tag":["2T", "1T"]}
-        insert_data(toto)
-
-    except:
-        print("Erreur")
