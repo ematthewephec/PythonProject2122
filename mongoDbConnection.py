@@ -23,3 +23,6 @@ def find_data(search):
     print("Recherche en cours....")
     return doc[0]
 
+def find_all():
+    doc = collection.find()
+    return doc
