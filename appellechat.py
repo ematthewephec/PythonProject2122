@@ -12,6 +12,9 @@ def inputcommand(command):
     # elif command != "" and command.split()[0] == "/version":
     #    print(versionAPP)
     elif command != "" and command.split()[0] == "/showUser":
-        return showUser.show_user(command.split()[1])
+        if command.split()[1] == "help":
+            return helpShowUser.help
+        else:
+            return showUser.show_user(command.split()[1], command.split()[2])
     else:
         return "commande non existante , faites /help pour voir la liste des commandes"
