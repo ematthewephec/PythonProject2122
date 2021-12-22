@@ -26,3 +26,7 @@ commandList = ["/getIp", "/help", "/showOnlineUserTag","/showUser"]
 commandString = "voici la liste des commandes : " + ", ".join(commandList)
 helpGeneral = HelpCommand(commandString + ".Ajoutez \" help\" à la suite de celles-ci pour plus d'informations.")
 helpShowUser = HelpCommand("Cette fonction prend 2 parametres le nom et prenom séparé par un espace")
+
+from UI.UI import *
+if __name__ == "__main__":
+    UIApp().run()

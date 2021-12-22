@@ -1,7 +1,8 @@
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
-from appellechat import *
+
 from kivymd.app import MDApp
+from main import *
 
 
 class UI(Widget):
@@ -23,8 +24,6 @@ class UIApp(MDApp):
 
     def getcommandresult(self):
         command = self.root.ids.input.text
+        from appellechat import inputcommand
         return inputcommand(command)
 
-
-if __name__ == "__main__":
-    UIApp().run()
