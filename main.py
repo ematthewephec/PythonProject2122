@@ -16,7 +16,6 @@ def getip(cmd):
     else:
         return "une erreur à été detectée"
 
-
 from appellechat import *
 from showOnlineUserTag import *
 

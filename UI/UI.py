@@ -8,7 +8,6 @@ from main import *
 class UI(Widget):
     pass
 
-
 class UIApp(MDApp):
     confirmbutton = ObjectProperty(None)
 
