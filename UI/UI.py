@@ -26,4 +26,3 @@ class UIApp(MDApp):
         command = self.root.ids.input.text
         from appellechat import inputcommand
         return inputcommand(command)
-
