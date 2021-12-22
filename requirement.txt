@@ -1,0 +1,6 @@
+required library to run the code :
+-mongoDbConnection
+-whatsmyip
+-pymongo
+-matplotlib
+-numpy
